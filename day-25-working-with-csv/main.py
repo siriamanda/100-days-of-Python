@@ -88,4 +88,4 @@ fur_color_dict = {"color": ["Gray", "Black", "Cinnamon"],
 
 fur_color_data = pd.DataFrame(fur_color_dict)
 print(fur_color_data)
-fur_color_data.to_csv("squirrel_count.csv")
+#fur_color_data.to_csv("squirrel_count.csv")
