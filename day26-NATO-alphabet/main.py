@@ -48,5 +48,3 @@ input_letters = [letter.upper() for letter in user_input]
 output_list = [nato_phonetic_alphabet_dict[letter] for letter in input_letters]
 
 print(output_list)
-
-
