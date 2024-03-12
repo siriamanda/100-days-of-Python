@@ -14,7 +14,6 @@ my_email = 'ziriamanda@gmail.com'
 password = 'qtnydxglyshyfcex'
 
 if today in birthdays_dict:
-
     random_number = random.randint(1,3)
     with open(f"./letter_templates/letter_{random_number}.txt", "r") as random_letter:
         personalised_letter = random_letter.read().replace("[NAME]", birthdays_dict[today]['name'])
@@ -24,7 +23,7 @@ if today in birthdays_dict:
         connection.login(user=my_email, password=password)
         connection.sendmail(
             from_addr=my_email,
-            to_addrs="ziriamanda@outlook.com",
+            to_addrs=birthdays_dict[today]['email'],
             msg=f"Subject:Happy Birthday \n\n {personalised_letter}")
 
 
