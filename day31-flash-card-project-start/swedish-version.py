@@ -61,8 +61,8 @@ canvas = Canvas(width=800, height=526, highlightthickness=0, background=BACKGROU
 card_background = canvas.create_image(400, 263, image=card_front)
 canvas.grid(column=0, row=0, columnspan=2)
 
-language_label = canvas.create_text(400, 150, text="", font=('Ariel', 40, 'italic'))
-word_label = canvas.create_text(400, 263, text="", font=('Ariel', 60, 'bold'))
+language_label = canvas.create_text(400, 150, text="", font=('Arial', 40, 'italic'))
+word_label = canvas.create_text(400, 263, text="", font=('Arial', 60, 'bold'))
 
 wrong_button = Button(image=wrong, highlightthickness=0, command=next_card)
 wrong_button.grid(column=0, row=1)
